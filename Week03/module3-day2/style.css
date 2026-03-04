@@ -1,0 +1,73 @@
+/* Modern Reset */
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* The suitcase rule! */
+}
+
+body {
+  margin: auto;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  
+}
+
+/* 1. Improved Image Fluidity */
+img {
+  max-width: 400px; /* Changed from 400px to ensure it stays inside the card */
+  height: auto;
+  display: block;
+  
+}
+
+/* 2. Responsive Grid Container */
+.card-container {
+  display: grid;
+  /* This creates a grid that automatically wraps cards to the next line */
+  /* minmax(280px, 1fr) ensures cards don't get smaller than 280px */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px; /* Keeps the grid from becoming too wide on ultrawide monitors */
+  margin: 0 auto;   /* Centers the entire container */
+  
+}
+
+/* 3. Flexible Card Width */
+.card {
+  /* Removed fixed width: 300px; */
+  width: 100%; 
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-content {
+  padding: 15px;
+  flex-grow: 1; /* Ensures content fills the card if they have different text lengths */
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-align: center;
+}

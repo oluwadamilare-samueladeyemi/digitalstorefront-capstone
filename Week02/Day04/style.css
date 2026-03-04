@@ -1,0 +1,187 @@
+/* -----------------------------------------
+   B: CSS Tokens + Variables (:root)
+   ----------------------------------------- */
+:root {
+    /* Color Tokens */
+    --color-bg-main: #f4f4f5;
+    --color-bg-card: #ffffff;
+    --color-text-primary: #18181b;
+    --color-text-secondary: #52525b;
+    --color-accent: #dc2626; /* A bold red for highlights */
+    --color-accent-hover: #991b1b;
+    --color-border: #e4e4e7;
+
+    /* Spacing Tokens */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 3rem;
+
+    /* Typography Tokens */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+/* -----------------------------------------
+   D: Box Model + Layout (Reset)
+   ----------------------------------------- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -----------------------------------------
+   C & E: Global Typography & Elements
+   ----------------------------------------- */
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg-main);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: var(--spacing-sm);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--color-accent-hover);
+    text-decoration: underline;
+}
+
+/* -----------------------------------------
+   Layout: Header
+   ----------------------------------------- */
+.hero-section {
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-card);
+    text-align: center;
+    padding: var(--spacing-lg) var(--spacing-md);
+    border-bottom: 4px solid var(--color-accent);
+}
+
+.hero-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-accent);
+    margin: var(--spacing-md) 0;
+}
+
+.hero-bio {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #a1a1aa;
+}
+
+/* -----------------------------------------
+   Layout: Main Content
+   ----------------------------------------- */
+.content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.about-section {
+    background: var(--color-bg-card);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: var(--spacing-lg);
+}
+
+.about-text p {
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-secondary);
+}
+
+.about-text h3 {
+    margin-top: var(--spacing-lg);
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 5px;
+}
+
+/* -----------------------------------------
+   Layout: Gallery Grid
+   ----------------------------------------- */
+.highlights-section h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.gallery-grid {
+    display: grid;
+    /* D: Creates a responsive, balanced layout automatically */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.gallery-card {
+    background: var(--color-bg-card);
+    padding: var(--spacing-sm);
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    text-align: center;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.gallery-card figcaption {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--color-text-secondary);
+}
+
+/* -----------------------------------------
+   Layout: Footer & Specificity Override
+   ----------------------------------------- */
+.site-footer {
+    text-align: center;
+    padding: var(--spacing-lg) var(--spacing-md);
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-card);
+}
+
+.menu ul {
+    list-style: none;
+    margin: var(--spacing-md) 0;
+}
+
+.menu li {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* C: Specificity Override 
+   This safely targets links ONLY inside the footer, overriding the global 
+   red link color to ensure they are visible on the dark footer background. */
+.site-footer .menu a {
+    color: var(--color-bg-card);
+    text-decoration: underline;
+}
+
+.site-footer .menu a:hover {
+    color: var(--color-accent);
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #71717a;
+}

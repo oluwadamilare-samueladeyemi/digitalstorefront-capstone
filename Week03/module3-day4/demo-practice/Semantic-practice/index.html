@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantics</title>
+</head>
+
+<body>
+    <img src="assets/Samuels Potrait.jpeg" alt="Samuel image" width="50px">
+
+    <h1>This is a header</h1>
+
+    <!-- Div element are good for containers  -->
+    <!-- Header are not to be used for styling -->
+    <!-- list can be unordered or ordered -->
+
+    <div>
+        <p>The p element represents paragraph.</p>
+        <ol>
+            <li>a list <a href="#link">element</a> is a child to ul, ol and menu.</li>
+            <li>a list <a href="#link">element</a> is a child to ul, ol and menu.</li>
+            <li>a list <a href="#link">element</a> is a child to ul, ol and menu.</li>
+        </ol>
+        <h2>This is a header</h2>
+        <p>The p element represents paragraph.</p>
+        <h3>This is a header</h3>
+        <p>The p element represents paragraph.</p>
+        <h4>This is a header</h4>
+        <p>The p element represents paragraph.</p>
+        <h5>This is a header</h5>
+        <p>The p element represents paragraph.</p>
+        <h6>This is a header</h6>
+        <p>The p element represents paragraph.</p>
+    </div>
+
+    <div>
+        <p>The p element represents paragraph.</p>
+        <ol>
+            <li>a list <a href="#link">element</a> is a child to ul, ol and menu.</li>
+            <li>a list <a href="#link">element</a> is a child to ul, ol and menu.</li>
+            <li>a list <a href="#link">element</a> is a child to ul, ol and menu.</li>
+        </ol>
+        <h2>This is a header</h2>
+        <p>The p element represents paragraph.</p>
+        <h3>This is a header</h3>
+        <p>The p element represents paragraph.</p>
+        <h4>This is a header</h4>
+        <p>The p element represents paragraph.</p>
+        <h5>This is a header</h5>
+        <p>The p element represents paragraph.</p>
+        <h6>This is a header</h6>
+        <p>The p element represents paragraph.</p>
+    </div>
+
+    <div>
+        <p>The p element represents paragraph.</p>
+        <ol>
+            <li>a list <a href="#link">element</a> is a child to ul, ol and menu.</li>
+            <li>a list <a href="#link">element</a> is a child to ul, ol and menu.</li>
+            <li>a list <a href="#link">element</a> is a child to ul, ol and menu.</li>
+        </ol>
+        <h2>This is a header</h2>
+        <p>The p element represents paragraph.</p>
+        <h3>This is a header</h3>
+        <p>The p element represents paragraph.</p>
+        <h4>This is a header</h4>
+        <p>The p element represents paragraph.</p>
+        <h5>This is a header</h5>
+        <p>The p element represents paragraph.</p>
+        <h6>This is a header</h6>
+        <p>The p element represents paragraph.</p>
+    </div>
+
+    <!-- Div display block meaning it is stacked on itself -->
+
+    <div>d</div>
+    <div>i</div>
+    <div>v</div>
+
+    <!-- span display in-line  -->
+
+    <span>s</span>
+    <span>p</span>
+    <span>a</span>
+    <span>n</span>
+
+    <!--Forms with placeholder is important for accessibilty for screen readers -->
+
+
+
+    <div>
+        <h2>Form - Input</h2>
+        <form action="#link">
+            <input type="search" placeholder="search page" value="">
+            <input type="text" placeholder="First name" value=""required> <!--Value stores the input-->
+            <input type="text" placeholder="Last name" value="" required> <!--Value stores the input-->
+            <input type="email" placeholder="Email address" value=""required> <!--Value stores the input-->
+            <input type="password" placeholder="password" value=""required> <!--Value stores the input-->
+            <input type="submit" value="submit"> <!--Input type "Submit" doesn't need a placeholder-->
+        </form>
+    </div>
+
+    <div>
+        <h2>Form - Check and Radio</h2>
+        <!-- checks - radio -->
+        <form action="#link">
+            <!-- the name should be the same as label to be able to link the value -->
+            <label for="Camera">
+                <p>Select Camera</p>
+                <input type="checkbox" name="Camera" value="canon" /> Canon <!--checkox allows to select multiple items-->
+                <input type="checkbox" name="Camera" value="nikon" /> Nikon <!--checkox allows to select multiple items-->
+                <input type="checkbox" name="Camera" value="sony" /> Sony <!--checkox allows to select multiple items-->
+                <input type="checkbox" name="Camera" value="linux" /> linux <!--checkox allows to select multiple items-->
+                <input type="checkbox" name="Camera" value="panasonic" /> panasonic <!--checkox allows to select multiple items-->
+            </label>
+
+            <label for="niche"></label>
+            <p>Select niche</p>
+            <input type="radio" name="niche" value="Lifestyle"> Lifestyle
+            <input type="radio" name="niche" value="Landscape"> Landscape
+            <input type="radio" name="niche" value="Studio"> Studio
+            <input type="radio" name="niche" value="Events"> Events
+        </form>
+    </div>
+
+    <div>
+        <!-- Here how to create a dropdown with an option -->
+        <h2>Form - Dropdown</h2>
+        <form action="#link">
+            <p>Select location</p>
+            <select name="city" id="city">
+                <option value="">Choose city</option>
+                <option value="Houston">Houston</option>
+                <option value="NewYork">New York</option>
+                <option value="Paris">Paris</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Madrid">Madrid</option>
+            </select>
+        </form>
+    </div>
+
+    <div>
+        <h2>Form - Textarea and Search</h2>
+        <form action="#link">
+            <textarea name="comments" id="usercomments" rows="10" cols="30" placeholder="Enter comment here..."></textarea>
+        </form>
+    </div>
+
+    <footer><a href="#link">www.checkmeout.com</a></footer>
+
+</body>
+
+</html>

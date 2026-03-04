@@ -1,0 +1,76 @@
+/* Color palette (3 colors only) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* The suitcase rule! */
+}
+
+:root {
+  --primary: #2f6cff;
+  --dark: #222;
+  --light: #ffffff;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  font-family: Arial, sans-serif;
+}
+
+/* h1 {
+  text-align:start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+img {
+  max-width: 20%;
+  border-radius: 100%;
+  justify-content: center;
+}
+/* Card */
+.card {
+  background: var(--light);
+  padding: 30px;
+  border: 2px solid var(--dark);
+  border-radius: 12px;
+  text-align: center;
+  width: 280px;
+}
+
+/* Text */
+.name {
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.bio {
+  color: var(--dark);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Links */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: var(--primary);
+  color: var(--light);
+}
