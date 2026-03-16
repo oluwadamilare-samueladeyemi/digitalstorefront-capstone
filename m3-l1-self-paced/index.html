@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Profile Card - Samuel Adeyemi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <style>
+        body {
+            /* Deep midnight blue background from previous setup */
+            background-color: #000b1e; 
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+
+        .vibe-card {
+            background: #ffffff;
+            border: none;
+            transition: all 0.4s ease-in-out;
+            /* Box Glow (Glow behind the card) from previous setup */
+            box-shadow: 
+                0 0 15px rgba(0, 210, 255, 0.4), 
+                0 0 30px rgba(0, 210, 255, 0.2), 
+                0 0 45px rgba(58, 123, 213, 0.1);
+        }
+
+        /* Hover effect from previous setup */
+        .vibe-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 
+                0 0 25px rgba(0, 210, 255, 0.8), 
+                0 0 50px rgba(0, 210, 255, 0.5), 
+                0 0 80px rgba(58, 123, 213, 0.3);
+        }
+
+        /* Gradient and Button Glow from previous setup */
+        .btn-vibe {
+            background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+            color: white;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+            font-weight: 600;
+        }
+
+        .btn-vibe:hover {
+            background: linear-gradient(45deg, #3a7bd5, #00d2ff);
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+            color: white;
+        }
+
+        /* ************************************************* */
+        /* ADDED: TEXT GLOW EFFECT FOR THE NAME              */
+        /* ************************************************* */
+        .text-glow-title {
+            color: #ffffff; /* Text color must be light for glow to show */
+            font-weight: 800; /* Extra bold for prominence */
+            
+            /* The Text Glow Effect: Multi-layered cyan light */
+            text-shadow: 
+                0 0 5px #00d2ff, /* Soft immediate halo */
+                0 0 10px #00d2ff, /* Standard outer glow */
+                0 0 20px #00d2ff, /* Extended glow spread */
+                0 0 40px #3a7bd5; /* Deep blue foundation */
+        }
+    </style> -->
+</head>
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-4">
+                
+                <div class="card vibe-card rounded-4 overflow-hidden">
+                    
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Samuel Adeyemi Profile Image">
+                    
+                    <div class="card-body text-center p-4">
+                        
+                        <h2 class="text-glow-title mb-1">Samuel Adeyemi</h2>
+                        <p class="text-muted small">Full Stack Developer MCA Africa</p>
+                        
+                        <div class="d-grid gap-2 mt-4">
+                            <button class="btn btn-vibe rounded-pill py-2">Follow</button>
+                            
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-outline-info rounded-pill w-100">LinkedIn</a>
+                                <a href="#" class="btn btn-outline-dark rounded-pill w-100">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

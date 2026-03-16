@@ -1,0 +1,57 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* 1. The Navbar Container */
+.navbar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    
+    /* Turn the navbar into a Flex Container */
+    display: flex; 
+    
+    /* Push the Logo to the left and Links to the right */
+    justify-content: space-between; 
+    
+    /* Center them vertically */
+    align-items: center; 
+}
+
+/* 2. The Unordered List (UL) */
+.nav-links {
+    /* Turn the List into a Flex Container to sit items side-by-side */
+    display: flex; 
+    
+    /* Remove the bullet points */
+    list-style: none; 
+}
+
+/* 3. The List Items (Spacing) */
+.nav-links li {
+    margin-left: 20px;
+}
+
+/* 4. Link Styling */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* 5. Simple Responsive Touch */
+@media (max-width: 600px) {
+    .navbar {
+        /* On small screens, stack the logo on top of the links */
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        margin-top: 10px;
+    }
+}
