@@ -43,6 +43,7 @@
     font-weight: bold;
 }
 
+
 /* 5. Simple Responsive Touch */
 @media (max-width: 600px) {
     .navbar {
